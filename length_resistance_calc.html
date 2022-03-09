@@ -13,27 +13,42 @@
   <body>
     <h1>Length / Resistance Calculator</h1>
 
-    <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Cable Length/Resistance</h5>
-              <p class="card-text">Calculate the length of a cable from its size and resistance or the resistance of a cable from its size and length</p>
-              <a href="length_resistance_calc.html" class="btn btn-primary">Length/Resistance Calculator</a>
-            </div>
+    <div class="container">
+      <form>
+        <div class="form-row mb-3">
+          <div class="col-md-6">
+            <label for="cable_length">Cable Length</label>
+            <input type="text" class="form-control" >
+          </div>
+          <div class="col-md-6">
+            <label for="cable_resistance">Cable Resistance</label>
+            <input type="text" class="form-control">
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        <div class="form-row mb-3">
+          <div class="col-md-6">
+            <label for="cable_size">Cable Size</label>
+            <input type="text" class="form-control" >
           </div>
         </div>
-      </div>
-
+          <div class="form-row mb-3">
+            <div class="col-md-6">
+              <label for="cable_resistance_calc">Calculated Resistance</label>
+              <input type="text" class="form-control" >
+            </div>
+          <div class="col-md-6">
+            <label for="cable_length_calc">Calculated Length</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+      </form>
+      
+      <div class="row mb-3">
+        <div class="col-md-6">
+      <a class="btn btn-primary" href="index.html" role="button">Home</a>
+    </div>
+  </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
