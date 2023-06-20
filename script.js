@@ -17,18 +17,6 @@ function calc() {
   document.getElementById("cable_length_calc").value = cable_length_result;
 }
 
-// // max fault loop script
-//   function fault_loop(){
-//   if (document.getElementById("type_c") = selected) {
-// //     greeting = "Good morning";
-// // } else if (breaker_type == type_c) {
-// //   greeting = "Good day";
-// // } else {
-// //   greeting = "Good evening";
-// // }
-// document.getElementById("demo").innerHTML = greeting;
-//   }}
-
 
 function fault_loop(breaker_type){ 
     document.getElementById("demo").innerHTML=breaker_type;
