@@ -1,5 +1,6 @@
 .cable_size_field {
 	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 36px;
 	overflow: hidden;
 }
