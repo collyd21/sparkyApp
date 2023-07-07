@@ -7,6 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src='script.js'></script>
 
     <title>Sparky App</title>
   </head>
@@ -15,44 +17,88 @@
 
     <div class="container">
       <form>
-        <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="type_b" name="breaker_type" class="custom-control-input" value="Type B" onclick="fault_loop(this.value)">
-            <label class="custom-control-label" for="type_b">Type B</label>
-          </div>
-          <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="type_c" name="breaker_type" class="custom-control-input" value="Type C" onclick="fault_loop(this.value)">
-            <label class="custom-control-label" for="type_c">Type C</label>
-          </div>
-          <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="type_d" name="breaker_type" class="custom-control-input" value="Type D" onclick="fault_loop(this.value)">
-            <label class="custom-control-label" for="type_d">Type D</label>
-          </div>
+        <div class="form-row">
+          
+          <h2>Select MCB / RCBO Type</h2>
+          
+          <div class="col-sm-12 fault_loop_field">
+          <input type="radio" class="btn-check" id="type_b" name="breaker_type" value="type_b" onclick="fault_loop(this.value)">
+          <label class="btn btn-primary" for="type_b">Type B</label>
+          
+          <input type="radio" class="btn-check" id="type_c" name="breaker_type" value="type_c" onclick="fault_loop(this.value)">
+          <label class="btn btn-primary" for="type_c">Type C</label>
+          
+            <input type="radio" class="btn-check" id="type_d" name="breaker_type" value="type_d" onclick="fault_loop(this.value)">
+            <label class="btn btn-primary" for="type_d">Type D</label>
+        </div></div>
 
-      
-      <div class="row mb-3">
-        <div class="col-md-6">
-            <p id="demo">hello</p>
-        </div>
-    </div>
-    <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" id="size_6" name="breaker_size" class="custom-control-input" value="size_6" onclick="fault_loop(this.value)">
-      <label class="custom-control-label" for="size_6">6</label>
-    </div>
-    <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" id="size_10" name="breaker_size" class="custom-control-input" value="size_10" onclick="fault_loop(this.value)">
-      <label class="custom-control-label" for="size_10">10</label>
-    </div>
-    <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" id="size_16" name="breaker_size" class="custom-control-input" value="size_16" onclick="fault_loop(this.value)">
-      <label class="custom-control-label" for="size_16">16</label>
-    </div>
+        <h2>Select MCB / RCBO Rating</h2>
+
+
+        <div class="form-row">
+        
+          <div class="col-sm-12 cable_size_field">
+          <input type="radio" id="size_6" name="breaker_size" value="size_6" onclick="fault_loop(this.value)">
+          <label class="btn btn-primary" for="size_6">6</label>
+          
+          <input type="radio" id="size_10" name="breaker_size" value="size_10" onclick="fault_loop(this.value)">
+          <label class="btn btn-primary" for="size_10">10</label>
+          
+          <input type="radio" id="size_16" name="breaker_size" value="size_16" onclick="fault_loop(this.value)">
+          <label class="btn btn-primary" for="size_16">16</label>
+          
+          <input type="radio" id="size_20" name="breaker_size" value="size_20" onclick="fault_loop(this.value)">
+          <label class="btn btn-primary" for="size_20">20</label>
+        </div></div>
+  
+          <div class="form-row">
+          <div class="col-sm-12 cable_size_field">
+          <input type="radio" id="size_25" name="breaker_size" value="size_25" onclick="fault_loop(this.value)">
+          <label class="btn btn-primary" for="size_25">25</label>
+                  
+          <input type="radio" id="size_32" name="breaker_size" value="size_32" onclick="fault_loop(this.value)">
+          <label class="btn btn-primary" for="size_32">32</label>
+          
+          <input type="radio" id="size_40" name="breaker_size" value="size_40" onclick="fault_loop(this.value)">
+          <label class="btn btn-primary" for="size_40">40</label>
+                  
+          <input type="radio" id="size_50" name="breaker_size" value="size_50" onclick="fault_loop(this.value)">
+          <label class="btn btn-primary" for="size_50">50</label>
+        </div></div>
+  
+        <div class="form-row">
+          <div class="col-sm-12 cable_size_field">
+          <input type="radio" id="size_63" name="breaker_size" value="size_63" onclick="fault_loop(this.value)">
+          <label class="btn btn-primary" for="size_63">63</label>
+                  
+          <input type="radio" id="size_80" name="breaker_size" value="size_80" onclick="fault_loop(this.value)">
+          <label class="btn btn-primary" for="size_80">80</label>
+                  
+          <input type="radio" id="size_100" name="breaker_size" value="size_100" onclick="fault_loop(this.value)">
+          <label class="btn btn-primary" for="size_100">100</label>
+                  
+          <input type="radio" id="size_125" name="breaker_size" value="size_125" onclick="fault_loop(this.value)">
+          <label class="btn btn-primary" for="size_125">125</label>
+             
+  
+        </div></div>
+
+    
     </form>
-      <div class="row mb-3">
+    <div class="row mb-3">
+
+    <h2 id="demo">Select Type and Size</h2>
+
+</div>
+
+
+       <div class="row mb-3">
         <div class="col-md-6">
       <a class="btn btn-primary" href="index.html" role="button">Home</a>
     </div>
   </div>
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src='script.js'></script>
