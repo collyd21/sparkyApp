@@ -72,7 +72,7 @@ if (type_b && mcb_6) {
   } else if (type_c && mcb_25)  {
     document.getElementById("demo").innerHTML= "0.92Ω";
   } else if (type_c && mcb_32)  {
-    document.getElementById("demo").innerHTML= "0.73Ω";
+    document.getElementById("demo").innerHTML= "0.72Ω";
   } else if (type_c && mcb_40)  {
     document.getElementById("demo").innerHTML= "0.57Ω";
   } else if (type_c && mcb_50)  {
