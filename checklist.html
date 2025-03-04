@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+          <!-- Required meta tags -->
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+          <!-- Bootstrap CSS -->
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Sparky App</title>
+</head>
+<body>
+    <h1>Submit Your Data</h1>
+    <form id="dataForm" action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('dataForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // You can add additional JavaScript functionality here if needed
+            // For now, the form will be submitted normally
+            this.submit();
+        });
+    </script>
+</body>
+</html>
